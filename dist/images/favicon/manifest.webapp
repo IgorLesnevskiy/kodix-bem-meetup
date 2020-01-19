@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "kodix-bem-meetup",
+  "description": "A test project for Kodix BEM Meetup",
+  "icons": {
+    "60": "/kodix-bem-meetup/assets/firefox_app_60x60.png",
+    "128": "/kodix-bem-meetup/assets/firefox_app_128x128.png",
+    "512": "/kodix-bem-meetup/assets/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "IgorLesnevskiy",
+    "url": null
+  }
+}
