@@ -1,0 +1,20 @@
+mixin card-list-item(data = {})
+    -
+        const {
+        	title = 'Вертикально текстово-графический блок (слайдер + табы)',
+            src = 'https://via.placeholder.com/450x250'
+        } = data;
+
+    .card-list__item.card
+        .card__title
+            .card__title-inner
+                =title
+        .card__preview
+            .image-container(data-object-ratio = "16x9")
+                .image-container__inner
+                    picture.image-container__picture
+                        img.image-container__image(src=src data-object-fit="cover")
+        .card__action-panel
+            .card__action.button
+                buton.button__element
+                    .button__text Выбрать

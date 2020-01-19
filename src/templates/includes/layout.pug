@@ -6,25 +6,12 @@ head
 	content="width=device-width, initial-scale=1, viewport-fit=cover"
 	)
 	block title
-		title Webpack boilerplate
+		title Kodix BEM Meetup
 	block description
 		meta(
 		name="description",
 		content="Default page description"
 		)
-
-	//- https://realfavicongenerator.net/
-	link(rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png")
-	link(rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png")
-	link(rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png")
-	link(rel="manifest" href="/images/favicon/site.webmanifest")
-	link(rel="shortcut icon" href="/images/favicon/favicon.ico")
-	meta(name="apple-mobile-web-app-title" content="Webpack boilerplate")
-	meta(name="application-name" content="Webpack boilerplate")
-	meta(name="msapplication-TileColor" content="#f2bb79")
-	meta(name="msapplication-TileImage" content="/images/favicon/mstile-144x144.png")
-	meta(name="msapplication-config" content="/images/favicon/browserconfig.xml")
-	meta(name="theme-color" content="#ffffff")
 
 	//- To run web application in full-screen -->
 	meta(
@@ -44,11 +31,11 @@ head
 	)
 	meta(
 	property="og:description",
-	content="The personal page of Igor Lesnevskiy, frontend developer from Moscow"
+	content="Kodix BEM Meetup"
 	)
 	meta(
 	property="og:image",
-	content="/images/shared-image.jpg"
+	content=require("../../images/shared-image.jpg")
 	)
 	meta(
 	name="twitter:card",
@@ -60,11 +47,11 @@ head
 	)
 	meta(
 	name="twitter:description",
-	content="The personal page of Igor Lesnevskiy, frontend developer from Moscow"
+	content="Kodix BEM Meetup"
 	)
 	meta(
 	name="twitter:image",
-	content="/images/shared-image.jpg"
+	content=require("../../images/shared-image.jpg")
 	)
 	meta(
 	itemprop="name",
@@ -72,11 +59,11 @@ head
 	)
 	meta(
 	itemprop="description",
-	content="The personal page of Igor Lesnevskiy, frontend developer from Moscow"
+	content="Kodix BEM Meetup"
 	)
 	meta(
 	itemprop="image",
-	content="/images/shared-image.jpg"
+	content=require("../../images/shared-image.jpg")
 	)
 
 	block styles
@@ -84,6 +71,7 @@ head
 body
 	.page-wrapper
 		.page-wrapper__inner
+
 			.page
 				.page__header
 					block header
@@ -91,8 +79,9 @@ body
 				.page__content
 					block page-title
 						.page__title Заголовок страницы
-					.content-area
-						block content
+
+					block content
+
 				.page__footer
 					block footer
 	block scripts

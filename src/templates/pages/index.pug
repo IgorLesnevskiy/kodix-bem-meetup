@@ -3,5 +3,14 @@ extends ../includes/layout
 block page-title
 
 block content
-    .floor
-        .floor__inner Foo
+    .page-section
+        .page-section__inner
+            .page-section__title
+                h1 Navigation
+
+            .page-section__content
+                ul.list
+                    li.list__item
+                        a(href="ui-kit.html") UI-kit
+                    li.list__item
+                        a(href="floors-picker.html") Floors picker

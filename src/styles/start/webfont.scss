@@ -4,8 +4,8 @@ $iconFontName: 'webfont';
 
 @font-face {
 	font-family: $iconFontName;
-	src: url('/fonts/webfont/webfont.woff') format('woff'),
-	url('/fonts/webfont/webfont.woff2') format('woff2')
+	src: url('../fonts/webfont/webfont.woff') format('woff'),
+	url('../fonts/webfont/webfont.woff2') format('woff2')
 }
 
 @mixin webfont-icon($icon-code, $after-or-before: 'before') {
@@ -23,10 +23,11 @@ $iconFontName: 'webfont';
 
 $webfont-icon--close-envelope: "\f101";
 $webfont-icon--pointer: "\f102";
-$webfont-icon--social--fb: "\f103";
-$webfont-icon--social--github: "\f104";
-$webfont-icon--social--linkedin: "\f105";
-$webfont-icon--social--medium: "\f106";
+$webfont-icon--search: "\f103";
+$webfont-icon--social--fb: "\f104";
+$webfont-icon--social--github: "\f105";
+$webfont-icon--social--linkedin: "\f106";
+$webfont-icon--social--medium: "\f107";
 
 
 .webfont-icon {
@@ -46,15 +47,18 @@ $webfont-icon--social--medium: "\f106";
 .webfont-icon--pointer:before {
    content: "\f102";
 }
-.webfont-icon--social--fb:before {
+.webfont-icon--search:before {
    content: "\f103";
 }
-.webfont-icon--social--github:before {
+.webfont-icon--social--fb:before {
    content: "\f104";
 }
-.webfont-icon--social--linkedin:before {
+.webfont-icon--social--github:before {
    content: "\f105";
 }
-.webfont-icon--social--medium:before {
+.webfont-icon--social--linkedin:before {
    content: "\f106";
+}
+.webfont-icon--social--medium:before {
+   content: "\f107";
 }

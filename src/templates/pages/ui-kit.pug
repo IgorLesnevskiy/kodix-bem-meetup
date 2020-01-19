@@ -1,0 +1,66 @@
+extends ../includes/layout
+
+include ../includes/card-list-item
+include ../includes/floors-picker-sidebar-item
+
+block page-title
+
+block content
+    .page-section
+        .page-section__inner
+            .page-section__title
+                h1 UI-kit
+
+            .page-section__content
+                h2 Buttons
+
+                .button
+                    buton.button__element
+                        .button__text Простая кнопка
+
+                br
+                br
+                h2 Inputs
+
+                h3 Simple
+                .input
+                    input.input__control(type="search" placeholder="Поиск...")
+
+                h3 With left icon
+                .input
+                    .input__icon
+                        .webfont-icon.webfont-icon--search
+                    input.input__control(type="search" placeholder="Поиск...")
+
+                h3 With right icon
+                .input
+                    input.input__control(type="search" placeholder="Поиск...")
+                    .input__icon
+                        .webfont-icon.webfont-icon--search
+                br
+                br
+                h2 Cards
+
+                .card-list
+                    +card-list-item({
+                        title: 'Заголовок карточки'
+                    })
+
+                    +card-list-item({
+                        title: 'Заголовок карточки'
+                    })
+
+                br
+                br
+                h2 Nav-panel
+
+                .card-list
+                    +card-list-item({
+                        title: 'Заголовок карточки'
+                    })
+
+                    +card-list-item({
+                        title: 'Заголовок карточки'
+                    })
+
+
