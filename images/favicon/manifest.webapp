@@ -3,9 +3,9 @@
   "name": "kodix-bem-meetup",
   "description": "A test project for Kodix BEM Meetup",
   "icons": {
-    "60": "/kodix-bem-meetup/images/firefox_app_60x60.png",
-    "128": "/kodix-bem-meetup/images/firefox_app_128x128.png",
-    "512": "/kodix-bem-meetup/images/firefox_app_512x512.png"
+    "60": "/kodix-bem-meetup/images/favicon/firefox_app_60x60.png",
+    "128": "/kodix-bem-meetup/images/favicon/firefox_app_128x128.png",
+    "512": "/kodix-bem-meetup/images/favicon/firefox_app_512x512.png"
   },
   "developer": {
     "name": "IgorLesnevskiy",
