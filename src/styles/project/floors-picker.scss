@@ -1,17 +1,29 @@
 .floors-picker {
 	display: flex;
 	align-items: flex-start;
+	flex-direction: column;
 	width: 100%;
 
 	&__sidebar {
-		flex-basis: 23rem;
+		flex-basis: 100%;
+		width: 100%;
 		flex-grow: 0;
 		flex-shrink: 0;
 		margin-right: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	&__content {
 		flex-grow: 1;
+	}
+
+	@include breakpoint(tablet) {
+		flex-direction: row;
+
+		.floors-picker__sidebar {
+			flex-basis: 23rem;
+			margin-bottom: 0;
+		}
 	}
 }
 

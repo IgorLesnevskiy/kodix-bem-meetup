@@ -7,16 +7,11 @@ $alt-font-family: "Roboto", Helvetica, sans-serif;
 $site-max-width: 1300px;
 $site-min-width: 320px;
 
-$breakpoint-xl: 1200px;
-$breakpoint-lg: 992px;
-$breakpoint-md: 768px;
-$breakpoint-sm: 576px;
-$breakpoint-xs: 0;
-
-$breakpoint-small: $breakpoint-xs;
-$breakpoint-mobile: $breakpoint-sm;
-$breakpoint-tablet: $breakpoint-md;
-$breakpoint-desktop: $breakpoint-lg;
+$breakpoint-projectors: 1200px;
+$breakpoint-desktop: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-phablet: 576px;
+$breakpoint-mobile: 320px;
 
 $base-font-color: $color--black;
 $animation-speed: 0.2s;
