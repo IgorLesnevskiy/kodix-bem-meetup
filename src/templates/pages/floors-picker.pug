@@ -1,7 +1,7 @@
 extends ../includes/layout
 
 include ../includes/card-list-item
-include ../includes/floors-picker-sidebar-item
+include ../includes/nav-panel-item
 
 
 block page-title
@@ -12,63 +12,77 @@ block content
             h1 Floors picker
 
         .page-section__content
+
                 .floors-picker
-                    .floors-picker__sidebar.floors-picker-sidebar
+                    .floors-picker__sidebar
 
-                        +floors-picker-sidebar-item({
-                            title: 'Все блоки',
-                            amount: 59,
-                            radio_value: 1,
-                            isChecked: true
-                        })
+                        .nav-panel
+                             .nav-panel__item
+                                +nav-panel-item({
+                                    title: 'Все блоки',
+                                    amount: 59,
+                                    radio_value: 1,
+                                    isChecked: true
+                                })
+                             .nav-panel__item
+                                +nav-panel-item({
+                                    title: 'Контентные',
+                                    amount: 15,
+                                    radio_value: 2
+                                })
+                             .nav-panel__item
+                                +nav-panel-item({
+                                    title: 'Разводящие',
+                                    amount: 12,
+                                    radio_value: 3
+                                })
+                             .nav-panel__item
+                                +nav-panel-item({
+                                    title: 'Специальные',
+                                    amount: 9,
+                                    radio_value: 4
+                                })
 
-                        +floors-picker-sidebar-item({
-                            title: 'Контентные',
-                            amount: 15,
-                            radio_value: 2
-                        })
+                    .floors-picker__content
 
-                        +floors-picker-sidebar-item({
-                            title: 'Разводящие',
-                            amount: 12,
-                            radio_value: 3
-                        })
+                        .floors-picker-content
+                            .floors-picker-content__search
 
-                        +floors-picker-sidebar-item({
-                            title: 'Специальные',
-                            amount: 9,
-                            radio_value: 4
-                        })
+                                .input
+                                    .input__icon
+                                        .webfont-icon.webfont-icon--search
+                                    input.input__control(type="search" placeholder="Поиск...")
 
-                    .floors-picker__content.floors-picker-content
-                        .floors-picker-content__search
-                            .input
-                                .input__icon
-                                    .webfont-icon.webfont-icon--search
-                                input.input__control(type="search" placeholder="Поиск...")
+                            .floors-picker-content__blocks
 
-                        .floors-picker-content__blocks.card-list
-                            +card-list-item({
-                                title: 'Вертикально текстово-графический блок (плитка)'
-                            })
+                                .card-list
+                                    .card-list__item
+                                        +card-list-item({
+                                            title: 'Вертикально текстово-графический блок (плитка)'
+                                        })
 
-                            +card-list-item({
-                                title: 'Вертикально текстово-графический блок (слайдер + табы)'
-                            })
+                                    .card-list__item
+                                        +card-list-item({
+                                            title: 'Вертикально текстово-графический блок (слайдер + табы)'
+                                        })
 
-                            +card-list-item({
-                                title: 'Вертикально текстово-графический блок (плитка)'
-                            })
+                                    .card-list__item
+                                        +card-list-item({
+                                            title: 'Вертикально текстово-графический блок (плитка)'
+                                        })
 
-                            +card-list-item({
-                                title: 'Вертикально текстово-графический блок (слайдер + табы)'
-                            })
+                                    .card-list__item
+                                        +card-list-item({
+                                            title: 'Вертикально текстово-графический блок (слайдер + табы)'
+                                        })
 
-                            +card-list-item({
-                                title: 'Вертикально текстово-графический блок (плитка)'
-                            })
+                                    .card-list__item
+                                        +card-list-item({
+                                            title: 'Вертикально текстово-графический блок (плитка)'
+                                        })
 
-                            +card-list-item({
-                                title: 'Вертикально текстово-графический блок (слайдер + табы)'
-                            })
+                                    .card-list__item
+                                        +card-list-item({
+                                            title: 'Вертикально текстово-графический блок (слайдер + табы)'
+                                        })
 

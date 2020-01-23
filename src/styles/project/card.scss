@@ -40,8 +40,10 @@
 	}
 
 	&__action {
-		width: 100%;
-		max-width: 25rem;
+		.button {
+			width: 100%;
+			max-width: 25rem;
+		}
 	}
 
 	&:hover &__action-panel {

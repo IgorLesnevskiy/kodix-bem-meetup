@@ -5,7 +5,7 @@ mixin card-list-item(data = {})
             src = 'https://via.placeholder.com/768x432'
         } = data;
 
-    .card-list__item.card
+    .card
         .card__title
             .card__title-inner
                 =title
@@ -15,6 +15,7 @@ mixin card-list-item(data = {})
                     picture.image-container__picture
                         img.image-container__image(src=src data-object-fit="cover")
         .card__action-panel
-            .card__action.button
-                buton.button__element
-                    .button__text Выбрать
+            .card__action
+                .button
+                    buton.button__element
+                        .button__text Выбрать

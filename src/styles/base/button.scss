@@ -78,7 +78,7 @@
 	}
 
 	&__text {
-		max-height: 3rem;
+		max-height: 4rem;
 		overflow: hidden;
 
 	}
@@ -87,5 +87,27 @@
 		padding: 0;
 		margin: 0;
 		border: none;
+	}
+}
+
+.button--size-s {
+	.button__element {
+		font-size: 1.2rem;
+		height: 3.6rem;
+	}
+
+	.button__text {
+		max-height: 3.4rem;
+	}
+}
+
+.button--size-l {
+	.button__element {
+		font-size: 1.6rem;
+		height: 5.2rem;
+	}
+
+	.button__text {
+		max-height: 4.2rem;
 	}
 }

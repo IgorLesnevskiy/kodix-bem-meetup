@@ -1,0 +1,17 @@
+mixin nav-panel-item(data = {})
+    -
+        const {
+            title = 'Все блоки',
+            amount = 59,
+            radio_value = 1,
+            isChecked = false
+        } = data;
+
+    .nav-panel-item
+        label.nav-panel-item__inner
+            input.nav-panel-item__control(type="radio" name="picker-group" value=radio_value checked=isChecked)
+            .nav-panel-item__content
+                .nav-panel-item__title
+                    =title
+                .nav-panel-item__counter
+                    =amount
