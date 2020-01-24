@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "name": "kodix-bem-meetup",
-  "description": "A test project for Kodix BEM Meetup",
+  "description": "Test project for Kodix BEM Meetup",
   "icons": {
     "60": "/kodix-bem-meetup/images/favicon/firefox_app_60x60.png",
     "128": "/kodix-bem-meetup/images/favicon/firefox_app_128x128.png",

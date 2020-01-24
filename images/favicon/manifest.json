@@ -1,7 +1,7 @@
 {
   "name": "kodix-bem-meetup",
   "short_name": "kodix-bem-meetup",
-  "description": "A test project for Kodix BEM Meetup",
+  "description": "Test project for Kodix BEM Meetup",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
