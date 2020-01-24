@@ -12,6 +12,4 @@ mixin nav-panel-item(data = {})
             input.nav-panel-item__control(type="radio" name="picker-group" value=radio_value checked=isChecked)
             .nav-panel-item__content
                 .nav-panel-item__title
-                    =title
-                .nav-panel-item__counter
-                    =amount
+                    =(`${title} ${amount ? `(${amount})` : ``}`)

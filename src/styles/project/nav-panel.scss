@@ -1,7 +1,8 @@
 .nav-panel {
-	border-radius: 1rem;
+	border-radius: 0.8rem;
 	overflow: hidden;
 	background: #fff;
+	box-shadow: 1px 1px 6px #E5E5E5;
 
 	&__item {}
 }
@@ -28,6 +29,7 @@
 		align-items: center;
 		padding: 1em 1.25em ;
 		transition: background-color $animation-speed ease-in-out;
+		text-transform: uppercase;
 	}
 
 	&__title {

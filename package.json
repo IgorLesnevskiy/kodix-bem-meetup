@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "ISC",
   "private": false,
-  "description": "A test project for Kodix BEM Meetup",
+  "description": "Test project for Kodix BEM Meetup",
   "repository": "git@github.com:IgorLesnevskiy/kodix-bem-meetup.git",
   "author": "IgorLesnevskiy",
   "main": "index.js",
